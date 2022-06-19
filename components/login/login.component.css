@@ -1,0 +1,35 @@
+:host {
+    width: 100%;
+    max-width: 310px;
+}
+
+input[type='password'] {
+    margin-top: 3px;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span {
+    align-self: center;
+}
+
+.spinner-border{
+    left: 160px;
+    bottom: 31px;
+    position: relative;
+}
+
+.botao-loading{
+    margin-top: 24px;
+    height: 40px;
+}

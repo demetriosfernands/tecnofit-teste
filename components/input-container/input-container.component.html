@@ -1,0 +1,7 @@
+<div class="form-row">
+  <label for="validationCustom03">{{label  ?? ''}}</label>  
+  <ng-content></ng-content>
+  <div class="text-danger" *ngIf="campoInvalido()">
+    {{msgError}}
+  </div>
+</div>

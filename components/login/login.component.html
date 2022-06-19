@@ -1,0 +1,20 @@
+<form #formulario="ngForm">
+    <span>Tecnofit</span>
+    <input-container msgError="E-mail inválido">
+        <input type="email" [ngModel]="email" required email name="email" ngModel class="form-control" placeholder="E-mail" />
+    </input-container>
+    <input-container msgError="Digite uma senha">
+        <input type="password" [ngModel]="password" required name="password" class="form-control" placeholder="Senha" />
+    </input-container>
+    <div class="botao-loading">
+        <botao label="Login" tipo="button" [loading]="loading" classeBotao="btn-primary" (click)="fazerLogin(formulario)">
+        </botao>
+        <span *ngIf="loading" class="spinner-border spinner-border-sm text-white" role="status">
+            <span class="sr-only"></span>
+        </span>
+    </div>
+</form>
+
+<ng-template #content>
+    <janela-modal [msgError]="msgError"></janela-modal>
+</ng-template>

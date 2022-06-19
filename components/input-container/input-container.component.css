@@ -1,0 +1,11 @@
+.text-success {
+    color:rgb(121, 193, 49) !important;
+    position: absolute;
+    padding-left: 2px;
+}
+
+.text-danger {
+    color: rgb(227, 83, 83) !important;
+    position: absolute;
+    padding-left: 2px;
+}
